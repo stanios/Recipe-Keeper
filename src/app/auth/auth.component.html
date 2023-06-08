@@ -28,11 +28,11 @@
                 required
                 minlength="6">
             </div>
-            <div class="">
-                <button class="btn btn-primary" type="submit" [disabled]="!authForm.valid">
+            <div class="btn-toolbar">
+                <button class="btn btn-primary m-5" type="submit" [disabled]="!authForm.valid">
                     {{ isLoginMode ? 'Login' : 'Sign up' }}
                 </button>
-                 |
+                 
                 <button class="btn btn-primary" type="button" (click)="onSwitchMode()">
                     Switch to {{ isLoginMode ?'Sign up':  'Login' }}
                 </button>
